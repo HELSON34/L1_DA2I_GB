@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROJET METU DA2I</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("ss.jpg") center/cover no-repeat;
+color:white;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background: url(ss.jpg);
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:#00b4d8;
+font-size:24px;
+font-weight:bold;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:blue;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:green;
+}
+
+/* MAIN */
+.main{
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+height:100vh;
+animation:fadeIn 2s ease-in;
+}
+
+.text{
+max-width:600px;
+}
+
+.text h1{
+font-size:45px;
+}
+
+.text span{
+color:#00b4d8;
+}
+
+.text p{
+margin-top:20px;
+line-height:1.6;
+}
+
+.text button{
+margin-top:25px;
+padding:12px 25px;
+background:hsl(342, 100%, 42%);
+border:none;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+}
+
+.text button:hover{
+background:#0077b6;
+transform:scale(1.05);
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.text h1{
+font-size:28px;
+}
+nav{
+display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2 class="logo">PROJET METU DA2I</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="About.html">About</a>
+<a href="Membres.html">Membres</a>
+<a href="Projet.html">Projet</a>
+<a href="Contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="main">
+<div class="text">
+<h1>SITE WEB DES<br><span>ETUDIANTS INFORMATIQUE</span></h1>
+<p>
+Nous sommes un groupe d’étudiants passionnés par le développement web.
+Nous créons des projets modernes et innovants.
+</p>
+<button onclick="join()">Join Us</button>
+</div>
+</section>
+
+<script>
+function join(){
+alert("Bienvenue dans PROJET METU DA2I 🚀");
+}
+</script>
+
+</body>
+</html>
